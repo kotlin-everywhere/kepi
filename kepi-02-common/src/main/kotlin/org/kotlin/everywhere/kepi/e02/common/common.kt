@@ -4,12 +4,11 @@ import kotlinx.serialization.Serializable
 import org.kotlin.everywhere.net.Kenet
 
 class Def : Kenet() {
-    val detect by c<Sensors, Unit>()
+    val pipe by p<Unit, ClientMsg>()
 }
 
 @Serializable
-data class Sensors(
-    val temperature: Float,
-    val humidity: Float,
-    val pressure: Float
-)
+sealed class ClientMsg {
+    @Serializable
+    data class Sensors(val temperature: Float, val humidity: Float, val pressure: Float) : ClientMsg()
+}
