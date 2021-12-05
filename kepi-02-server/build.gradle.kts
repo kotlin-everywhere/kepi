@@ -25,5 +25,5 @@ dependencies {
     implementation("com.github.kotlin-everywhere.kenet:kenet-server:$kenetVersion")
     implementation("com.github.kotlin-everywhere.kenet:kenet-server-engine-http:$kenetVersion")
 
-    implementation(project(":kepi-01-cli-common"))
+    implementation(project(":kepi-02-common"))
 }

@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("org.kotlin.everywhere.kepi.e01.cli.client.MainKt")
+    mainClass.set("org.kotlin.everywhere.kepi.e02.client.MainKt")
 }
 
 repositories {
@@ -23,7 +23,7 @@ dependencies {
     val kenetVersion = "087fed6fea"
     implementation("com.github.kotlin-everywhere.kenet:kenet-client:$kenetVersion")
     implementation("com.github.kotlin-everywhere.kenet:kenet-client-engine-http:$kenetVersion")
-    implementation(project(":kepi-01-cli-common"))
+    implementation(project(":kepi-02-common"))
 
     implementation("com.github.kotlin-everywhere:rpi-sense-hat-java:36a35f5925")
 }
